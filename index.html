@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Variables, data types and operators</title>
+</head>
+<body>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    main {
+        width: 900px;
+        height: 100%;
+        margin: 0 auto;
+    }
+
+    h1 {
+        color: red;
+        padding: 10px;
+        text-align: center;
+    }
+
+    table {
+        margin: 0 auto;
+        border-collapse: collapse;
+        border: 2px solid #eee;
+    }
+
+    th, td {
+        border: 1px solid #eee;
+        width: 150px;
+        height: 30px;
+    }
+    td {
+        text-align: center;
+    }
+    input {
+        border: none;
+        text-align: center;
+        height: 25px;
+    }
+    button {
+        width: 100px;
+        height: 25px;
+        margin-top: 25px;
+        float: right;
+    }
+
+    .coverF {
+        width: 250px;
+        height: 25px;
+        border: 1px solid blueviolet;
+        text-align: center;
+    }
+</style>
+<main>
+<!--    B1-->
+<h1>Tính điểm học sinh</h1>
+<table>
+    <tr>
+        <th>Tên học sinh</th>
+        <th>Vật Lý</th>
+        <th>Hóa học</th>
+        <th>Sinh học</th>
+        <th>Tổng điểm</th>
+        <th>Điểm trung bình</th>
+    </tr>
+    <tr>
+        <td><input class="name" type="text" placeholder="Nhập tên"></td>
+        <td ><input class="vl" type="text" placeholder="Điểm vật lý"></td>
+        <td ><input class="hh" type="text" placeholder="Điểm hoá học"></td>
+        <td ><input class="sh" type="text" placeholder="Điểm sinh học"></td>
+        <td class="td"></td>
+        <td class="dtb"></td>
+    </tr>
+</table>
+    <button class="getTotal" onclick="getTotal()">Tính điểm</button>
+
+<!--    B2-->
+    <div class="b2" style="margin-top: 100px; width: 100%">
+    <h1>Chuyển độ C sang độ F</h1>
+        <div style="margin: 0 auto; display: flex;">
+        <input class = "coverC" type="text" placeholder="Nhập độ C" style="border: 1px solid blueviolet; width: 250px;height: 25px">
+        --------->
+            <div class = "coverF"></div>
+        </div>
+            <button onclick="convertC()">Covert</button>
+    </div>
+
+<!--  B3 + B4-->
+    <div style="margin-top: 100px">
+        <h1>Tính diện tích, chu vi hình tròn</h1>
+        <div class="input-s" style="display: flex;">
+            <input class = "input-R" type="text"placeholder="nhập bán kính" style="border: 1px solid blueviolet; width: 200px; height: 25px">
+            <input class = "input-D" type="text"placeholder="nhập đường kính" style="border: 1px solid blueviolet; width: 200px; height: 25px">
+            ----->
+            <div class="resultD" style="text-align: center; border: 1px solid blueviolet; width: 200px; height: 25px"></div>
+            <div class="resultR" style="text-align: center; border: 1px solid blueviolet; width: 200px; height: 25px"></div>
+        </div>
+        <button onclick="resultS()">Tính diện tích</button>
+        <button onclick="resultC()">Tính chu vi</button>
+    </div>
+</main>
+<script src="./main.js">
+
+</script>
+</body>
+</html>
